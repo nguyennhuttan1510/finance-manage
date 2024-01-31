@@ -1,0 +1,26 @@
+@import '../../styles/variable';
+
+.tab {
+  width: 100%;
+  transform: translateY(1.6px);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .tab-item {
+    height: $height-tab;
+    padding: 0 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;;
+    transition: .2s all ease;
+    &.active {
+      color: white;
+      font-weight: bold;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.tab-content {
+  width: 100%;
+}

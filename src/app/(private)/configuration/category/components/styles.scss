@@ -1,0 +1,21 @@
+@import '@/styles/variable';
+
+.category-item {
+  border-radius: 12px;
+  transition: .4s all ease;
+  .action {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  &:hover {
+    background-color: rgba($primary-color, 0.3);
+  }
+}
+
+.sub-category {
+  padding: 16px;
+  background-color: rgba($primary-color, 0.1);
+  border-radius: 12px;
+}

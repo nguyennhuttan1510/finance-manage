@@ -1,0 +1,11 @@
+@mixin mode-color($name, $properties, $light, $dark) {
+  .#{$name} {
+    #{$properties}:$light
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .#{$name} {
+      #{$properties}:$dark
+    }
+  }
+}

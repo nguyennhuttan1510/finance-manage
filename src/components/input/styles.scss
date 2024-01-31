@@ -1,0 +1,9 @@
+@import "@/styles/variable";
+
+.input {
+  height: 38px;
+  border-color: $gray-color;
+  &:focus-visible {
+    outline-width: 0;
+  }
+}

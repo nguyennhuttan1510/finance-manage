@@ -1,0 +1,8 @@
+@import "@/styles/variable";
+
+.textarea {
+  border-color: $gray-color;
+  &:focus-visible {
+    outline-width: 0;
+  }
+}

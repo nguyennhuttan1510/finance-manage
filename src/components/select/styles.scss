@@ -1,0 +1,8 @@
+@import "@/styles/variable";
+
+.select__control {
+  height: $height-input;
+  box-shadow: none !important;
+  border-color: $gray-color !important;
+  border-radius: 8px !important;
+}

@@ -1,0 +1,16 @@
+@import "@/styles/variable";
+
+.MuiInputBase-root.MuiOutlinedInput-root {
+  height: $height-input;
+  border-radius: 8px;
+  font-size: 12px;
+  .MuiOutlinedInput-notchedOutline {
+    border-color: $gray-color;
+  }
+  &.Mui-focused {
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $gray-color;
+      border-width: 1px;
+    }
+  }
+}

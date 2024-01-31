@@ -1,0 +1,9 @@
+@import "@/styles/mixin";
+@import "@/styles/variable";
+
+.transaction-category {
+  .transaction-total {
+    border-bottom: 2px solid rgb(var(--background-start-rgb));
+  }
+}
+

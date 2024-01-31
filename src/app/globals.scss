@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@/styles/variable";
+@import "@/styles/mixin";
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 15, 15, 15;
+  }
+}
+
+//----------------------------------------COMMON CLASS---------------------------------
+.text-dark {
+  color: $dark-color;
+}
+.bg-dark {
+  background-color: $dark-color;
+}
+.text-light {
+  color: $light-color;
+}
+.bg-light {
+  background-color: $light-color;
+}
+.text-primary {
+  color: $primary-color;
+}
+.bg-primary {
+  background-color: $primary-color;
+}
+.text-secondary {
+  color: $secondary-color;
+}
+.bg-secondary {
+  background-color: $secondary-color;
+}
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@include mode-color('bg-mode', background-color, rgb(255, 255, 255), $dark-color);
+@include mode-color('bg-mode-body', background-color, whitesmoke, rgb(15, 15, 15));
+@include mode-color('text-mode', color, black, white);
+
+body {
+  font-size: 12px;
+  color: rgb(var(--foreground-rgb));
+  background: whitesmoke;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container-sidebar {
+  width: $width-sidebar;
+}
+
+.container-main {
+  width: calc(100% - $width-sidebar);
+  padding-left: $width-sidebar;
+}
+
+.container-content {
+  padding: $padding-container-content
+}
+
+input {
+  font-size: 14px;
+}

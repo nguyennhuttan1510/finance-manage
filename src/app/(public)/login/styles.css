@@ -1,0 +1,9 @@
+.card {
+    transition: .4s all ease;
+}
+.card.effect {
+    filter: blur(10px);
+    transform: scale(4);
+    opacity: 0;
+    visibility: hidden;
+}
